@@ -1,7 +1,5 @@
-<script>
+<script setup>
 /* 
------script setup-----
-
 const collections = [
   {
     title: "Yummi Universe",

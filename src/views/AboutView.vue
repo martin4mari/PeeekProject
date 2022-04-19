@@ -1,18 +1,13 @@
-
-<script>
-export default {
-  name: "AboutView",
-
-  data() {
-    return {
-      collection: "Yummi Universe",
-      title: "Yummi 002",
-      description:
-        "A female led NFT project ready to drop a collection of cute, colourful, and otherworldly CNFTs and build a inclusive, art based community.",
-    };
-  },
+<script setup>
+const item = {
+  collection: "Yummi Universe",
+  title: "Yummi 002",
+  description:
+    "A female led NFT project ready to drop a collection of cute, colourful, and otherworldly CNFTs and build a inclusive, art based community.",
 };
 </script>
+
+
 <template>
   <div class="flex justify-center">
     <div
@@ -30,20 +25,20 @@ export default {
       <img
         src="../components/images/yummi2.png"
         class="w-full rounded-l-2xl"
-        alt="yummi002"
+        :alt="`${item.title}`"
       />
       <div class="py-5 pl-10 my-5">
         <div class="flex">
-          <h2>{{ collection }}</h2>
+          <h2>{{ item.collection }}</h2>
           <img
             src="../components/icons/ver.svg"
-            class="mx-2 h-5 w-auto "
+            class="mx-2 h-5 w-auto"
             alt="verified-icon"
           />
         </div>
-        <h3 class="text-4xl font-black">{{ title }}</h3>
+        <h3 class="text-4xl font-black">{{ item.title }}</h3>
         <p class="pt-10 pb-5 pr-5 font-black">
-          {{ description }}
+          {{ item.description }}
         </p>
         <div>
           <button
@@ -91,5 +86,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style scoped></style>
