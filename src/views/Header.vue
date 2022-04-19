@@ -4,7 +4,6 @@ import { RouterLink } from "vue-router";
 
 <template>
   <header class="header flex flex-row justify-around">
-
     <RouterLink to="/"
       ><img
         src="@/components/icons/peeekEye.svg"
@@ -16,12 +15,10 @@ import { RouterLink } from "vue-router";
       <img src=@/components/icons/Vector.svg class="h-4 w-auto my-2
       hover:opacity-70" alt="settings-icon">
     </div>
-
   </header>
 
-
   <section>
-  <!---sampo section--->
+    <!--sampo section-->
 
     <div class="m-2 flex flex-col items-center">
       <img
@@ -35,7 +32,14 @@ import { RouterLink } from "vue-router";
         building a universe → @FortGotten
       </p>
       <nav
-        class="w-15 h-7 flex flex-row border-solid border-2 border-black rounded-full justify-around"
+        class="
+          w-15
+          h-7
+          flex flex-row
+          border-solid border-2 border-black
+          rounded-full
+          justify-around
+        "
       >
         <ul class="divide-x divide-black flex flex-row">
           <li class="p-1.5">
@@ -58,6 +62,5 @@ import { RouterLink } from "vue-router";
         </ul>
       </nav>
     </div>
-
   </section>
 </template>
