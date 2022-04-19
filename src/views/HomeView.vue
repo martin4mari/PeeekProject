@@ -60,7 +60,7 @@ export default {
 
 <template>
   <section class="flex flex-col justify-center mx-24 my-10">
-    <div class="grid grid-cols-4 gap-3 justify-self-center sm:grid-cols-1 md:grid-cols-1">
+    <div class="grid grid-cols-4 gap-3 justify-self-center sm:grid-cols-1">
       <div :key="collection.id" v-for="collection in collections" class="p-2">
         <RouterLink to="/about/">
           <!--<img :src="img"/>-->

@@ -24,12 +24,11 @@ export default {
         rounded-2xl
         bg-white
         sm:grid-cols-1
-        md:grid-cols-1
       "
     >
       <img
         src="../components/images/yummi2.png"
-        class="w-full place-self-end rounded-l-2xl"
+        class="w-full rounded-l-2xl"
         alt="yummi002"
       />
       <div class="py-5 pl-10 my-5">

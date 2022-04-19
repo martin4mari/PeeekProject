@@ -1,7 +1,6 @@
 <template>
   <footer class="block">
     <div class="w-full h-20 py-8 bg-black text-white flex justify-around">
-      <!------  set to match with header s peeek  -->
       <img
         src="../components/icons/eyes.svg"
         class="h-5 w-5 mx-10 hover:scale-105"
