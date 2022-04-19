@@ -20,7 +20,7 @@ import { RouterLink } from "vue-router";
     <div class="m-2 flex flex-col items-center">
       <img
         src="../components/images/avatar.png"
-        class="w-30 h-30"
+        class="w-28 h-28"
         alt="kid-avatar"
       />
       <h2 class="pt-2 text-3xl font-semibold">Sampo</h2>

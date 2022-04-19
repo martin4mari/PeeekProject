@@ -1,3 +1,4 @@
+
 <script>
 export default {
   name: "AboutView",
@@ -36,8 +37,8 @@ export default {
           <h2>{{ collection }}</h2>
           <img
             src="../components/icons/ver.svg"
-            class="mx-2 h-5 w-auto"
-            alt="verified"
+            class="mx-2 h-5 w-auto "
+            alt="verified-icon"
           />
         </div>
         <h3 class="text-4xl font-black">{{ title }}</h3>

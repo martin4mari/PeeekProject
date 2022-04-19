@@ -10,6 +10,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      //check on getting cardDetail by id using route params
       path: "/about/:id",
       name: "about",
       component: () => import("../views/AboutView.vue"),
