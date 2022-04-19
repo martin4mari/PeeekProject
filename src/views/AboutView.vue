@@ -17,14 +17,14 @@ export default {
   <div class="flex justify-center">
     <div
       class="
-        card-details
         m-10
-        grid grid-cols-2
+        grid grid-cols-1
         w-2/3
         justify-self-center
         rounded-2xl
         bg-white
-        sm:grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-2
       "
     >
       <img

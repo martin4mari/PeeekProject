@@ -10,7 +10,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      //check on getting cardDetail by id using route params
+      //---check on getting cardDetails by id using route params---
       path: "/about/:id",
       name: "about",
       component: () => import("../views/AboutView.vue"),
@@ -19,7 +19,7 @@ const router = createRouter({
       path: "/about",
       name: "collectionview",
       component: () => import("../views/CollectionView.vue"),
-    }
+    },
   ],
 });
 

@@ -9,8 +9,8 @@
 
 <template>
   <section class="flex flex-col justify-center mx-24 my-10 sm:m-5">
-    <h2 class="p-12 text-3xl font-black py-6">Yummi Universe</h2>
-    <div class="grid grid-cols-4 gap-3 sm:grid-cols-1 md:grid-cols-1">
+    <h2 class="p-12 text-3xl font-black py-6 text-center lg:text-left">Yummi Universe</h2>
+    <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4 ">
       <!--      
       <div :key="index" v-for="(item, index) in items" class="p-2">        
         <RouterLink :to="'/about/' + index">
