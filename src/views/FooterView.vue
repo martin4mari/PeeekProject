@@ -1,6 +1,7 @@
 <template>
   <footer class="block w-full">
-    <div class="w-full h-20 py-8 bg-black text-white flex justify-around ">
+
+    <div class="w-full py-8 bg-black text-white flex justify-around ">
       <img
         src="../components/icons/eyes.svg"
         class="h-5 w-5 mx-10 hover:scale-105"
@@ -25,5 +26,6 @@
         </ul>
       </div>
     </div>
+
   </footer>
 </template>

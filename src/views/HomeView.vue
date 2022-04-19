@@ -10,8 +10,10 @@ const collections = [
 </script>
 
 <template>
+
   <section class="flex flex-col justify-center mx-24 my-10">
     <div class="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
+
       <!-- 
         <div :key="index" v-for="(collection,index) in collections">
         <RouterLink to="/about/">
@@ -58,6 +60,7 @@ const collections = [
           <h3 class="text-lg font-bold py-4 text-center">Yummi Universe</h3>
         </div>
       </RouterLink>
+
       <RouterLink to="/about/">
         <div class="flex flex-col justify-between">
           <img
@@ -100,6 +103,7 @@ const collections = [
           <h3 class="text-lg font-bold py-4 text-center">Ranging Pets</h3>
         </div>
       </RouterLink>
+
       <RouterLink to="/about/">
         <div class="flex flex-col justify-between">
           <img
@@ -110,6 +114,7 @@ const collections = [
           <h3 class="text-lg font-bold py-4 text-center">Space Bud</h3>
         </div>
       </RouterLink>
+
       <RouterLink to="/about/">
         <div class="flex flex-col justify-between">
           <img
@@ -125,6 +130,7 @@ const collections = [
           <h3 class="text-lg font-bold py-4 text-center">:Cyclr</h3>
         </div>
       </RouterLink>
+
       <RouterLink to="/about/">
         <div class="flex flex-col justify-between">
           <img
@@ -135,9 +141,12 @@ const collections = [
           <h3 class="text-lg font-bold py-4 text-center">Unsig</h3>
         </div>
       </RouterLink>
+      
     </div>
   </section>
+
 </template>
+
 
 <style scoped>
 h3 {
