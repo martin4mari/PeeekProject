@@ -1,4 +1,5 @@
 <script setup>
+import UserProfile from "../components/UserProfile.vue"
 
 const item = {
   collection: "Yummi Universe",
@@ -12,10 +13,10 @@ const item = {
 
 
 <template>
-
-  <div class="flex justify-center">
+<user-profile></user-profile>
+  <div class="flex justify-center dark:bg-slate-900 dark:text-slate-100">
     <div
-      class="m-10 grid grid-cols-1 w-2/3 justify-self-center rounded-2xl bg-white md:grid-cols-2 lg:grid-cols-2"
+      class="m-10 grid grid-cols-1 w-2/3 justify-self-center rounded-2xl md:grid-cols-2 lg:grid-cols-2"
     >
       <img
         src="../components/images/yummi2.png"
@@ -37,7 +38,7 @@ const item = {
           {{ item.description }}
         </p>
         
-        <div>
+        <div class="dark:text-slate-900">
           <button
             class="my-2 w-8 h-8 text-sm text-center font-black bg-stone-300 rounded-full"
           >

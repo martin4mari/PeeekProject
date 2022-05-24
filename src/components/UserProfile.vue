@@ -1,26 +1,7 @@
-<script setup>
-import { RouterLink } from "vue-router";
-</script>
-
 <template>
-  <header class="header flex flex-row justify-around">
-    <RouterLink to="/"
-      ><img
-        src="@/components/icons/peeekEye.svg"
-        class="w-24 h-20"
-        alt="peeek-logo"
-    /></RouterLink>
-
-    <div class="m-6">
-      <img src=@/components/icons/Vector.svg class="h-4 w-auto my-2
-      hover:opacity-70" alt="settings-icon">
-    </div>
-  </header>
-
-  <section>
-    <!--sampo section-->
-
-    <div class="m-2 flex flex-col items-center">
+  <!--sampo section-->
+  <section class="dark:bg-slate-900 dark:text-slate-100">
+    <div class="p-10 flex flex-col items-center dark:">
       <img
         src="../components/images/avatar.png"
         class="w-28 h-28"
@@ -39,9 +20,10 @@ import { RouterLink } from "vue-router";
           border-solid border-2 border-black
           rounded-full
           justify-around
+          dark:border-white
         "
       >
-        <ul class="divide-x divide-black flex flex-row">
+        <ul class="divide-x divide-black dark:divide-white flex flex-row">
           <li class="p-1.5">
             <a href="#">
               <img
