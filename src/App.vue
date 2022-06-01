@@ -6,6 +6,7 @@ export default {
   data() {
     return {
       isActive: false,
+      style: { backgroundColor: "", color: "" },
     };
   },
   methods: {
@@ -18,36 +19,48 @@ export default {
 </script>
 
 <template>
-  <div :class="!isActive ? 'dark' : ''" class="dark:bg-slate-900">
+
+  <div
+    :class="isActive ? '' : 'dark'"
+    v-bind:style="style"
+  >
+
+
     <button
       @click="dark()"
-      class=" button
-        dark:bg-gray-400
+      class="
+      hidden
+        button
+        dark:bg-slate-900
         absolute
         z-20
         mr-5
-        bg-gray-300
+        bg-gray-100
         border-gray-500
         right-0
         rounded-b-full
         dark:bg-slate-700
+        lg:block
+        p-[1px] pt-[1px]
       "
     >
       <img
         v-show="isActive === false"
         src="./components/icons/sun.svg"
-        class="w-5 h-5"
+        class="w-4 h-4"
         alt=""
       />
       <img
         v-show="isActive === true"
-        src="./components/icons/moon.svg"
-        class="w-5 h-5"
+        src="./components/icons/lmoon.svg"
+        class="w-4 h-4"
         alt=""
       />
     </button>
 
     <header-component class="dark:bg-slate-900"> </header-component>
+
+    
     <router-view></router-view>
     <footer-view></footer-view>
   </div>
@@ -55,13 +68,14 @@ export default {
 
 <style>
 @import "@/assets/base.css";
-@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk:wght@700&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk:wght@300&family=Work+Sans&display=swap");
 main {
   font-family: "Manrope", sans-serif;
 }
 
-.button{
-  border:solid 1px;
+.button {
+  border: solid 1px;
   border-top: none;
 }
+
 </style>

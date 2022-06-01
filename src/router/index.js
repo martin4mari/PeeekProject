@@ -32,6 +32,10 @@ const router = createRouter({
       path: "/about/:id",
       name: "item",
       component: () => import("../views/AboutView.vue"),
+    }, {
+      path: "/wallet",
+      name: "walletSection",
+      component: () => import("../views/WalletSection.vue"),
     },
    
     

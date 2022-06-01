@@ -13,8 +13,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+
+  /*change bg , create var for the body themes and tailwind*/
   color: var(#000);
-  background-color: rgb(241 245 249);
+  background-color:#f1f5f9
+
+  ;
   transition: color 0.5s, background-color 0.5s;
   font-family: "Work Sans", sans-serif;
   min-height: 100vh;
