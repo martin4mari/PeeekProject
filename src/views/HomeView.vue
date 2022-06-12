@@ -2,7 +2,7 @@
   <section
     class="dark:bg-slate-900 bg-slate-100 dark:text-slate-100 text-slate-900"
   >
-    <div class="w-screen flex overflow-hidden w-2/3">
+    <div class="w-screen flex overflow-hidden flex-col lg:flex-row">
       <div class="flex flex-col m-20 p-5">
         <img src="../components/icons/eyes.svg" alt="" class="w-8 h-8 my-5" />
 
@@ -12,21 +12,26 @@
           are. Make collections, select what you want to show and add it to your
           social media.
         </p>
-        <router-link to="/setup">   <button
-        class="
-          border-2
-          p-1
-          rounded-full
-          w-44
-          border-slate-900
-          dark:border-slate-100
-          flex
-        "
-      >
-        <img src="../components/icons/eyes.svg" alt="" class="w-6 h-6 px-1" />
-        <span class="px-2 dark:text-slate-100">Connect Wallet</span>
-      </button></router-link>
-      
+        <router-link to="/setup">
+          <button
+            class="
+              border-2
+              p-1
+              rounded-full
+              w-44
+              border-slate-900
+              dark:border-slate-100
+              flex
+            "
+          >
+            <img
+              src="../components/icons/eyes.svg"
+              alt=""
+              class="w-6 h-6 px-1"
+            />
+            <span class="px-2 dark:text-slate-100">Connect Wallet</span>
+          </button></router-link
+        >
       </div>
 
       <div>
@@ -35,14 +40,17 @@
             absolute
             z-20
             left-0
-            bg-gradient-to-r
+           
+            lg:bg-gradient-to-r
+            bg-gradient-to-b
             from-slate-100
             dark:from-slate-900
             h-full
-            w-1/2
+            lg:w-1/2
+            w-full
           "
         ></div>
-        <img src="../components/images/nftheader.png" alt="" />
+        <img src="../components/images/nftheader.png" alt="" class="" />
       </div>
     </div>
   </section>
@@ -66,56 +74,58 @@
         NFTs from the same Creator, Favorite Bluechips, available for trading,
         junk, etc.
       </p>
-      <div class="flex justify-center gap-12">
+      <div class="flex justify-center gap-12 flex-col lg:flex-row">
         <div>
-        <img
-          src="src/components/images/collect/RangingPets.png"
-          alt=""
-          class="h-48 w-48 z-20"
-        />
-        <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
-        <img
-          src="src/components/images/collect/Claymate.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-6 z-10"
-        /><img
-          src="src/components/images/collect/unsig.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-12 z-0"
-        />
-      </div><div>
-        <img
-          src="src/components/images/collect/RangingPets.png"
-          alt=""
-          class="h-48 w-48 z-20"
-        />
-        <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
-        <img
-          src="src/components/images/collect/Claymate.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-6 z-10"
-        /><img
-          src="src/components/images/collect/unsig.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-12 z-0"
-        />
-      </div><div>
-        <img
-          src="src/components/images/collect/RangingPets.png"
-          alt=""
-          class="h-48 w-48 z-20"
-        />
-        <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
-        <img
-          src="src/components/images/collect/Claymate.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-6 z-10"
-        /><img
-          src="src/components/images/collect/unsig.png"
-          alt=""
-          class="h-48 w-48 absolute top-0 rotate-12 z-0"
-        />
-      </div>
+          <img
+            src="src/components/images/collect/RangingPets.png"
+            alt=""
+            class="h-48 w-48 z-20"
+          />
+          <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
+          <img
+            src="src/components/images/collect/Claymate.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-6 z-10"
+          /><img
+            src="src/components/images/collect/unsig.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-12 z-0"
+          />
+        </div>
+        <div>
+          <img
+            src="src/components/images/collect/RangingPets.png"
+            alt=""
+            class="h-48 w-48 z-20"
+          />
+          <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
+          <img
+            src="src/components/images/collect/Claymate.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-6 z-10"
+          /><img
+            src="src/components/images/collect/unsig.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-12 z-0"
+          />
+        </div>
+        <div>
+          <img
+            src="src/components/images/collect/RangingPets.png"
+            alt=""
+            class="h-48 w-48 z-20"
+          />
+          <h1 class="text-xs py-5 font-[500]">Big Dumb Idiot Ape Club ™</h1>
+          <img
+            src="src/components/images/collect/Claymate.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-6 z-10"
+          /><img
+            src="src/components/images/collect/unsig.png"
+            alt=""
+            class="h-48 w-48 absolute top-0 rotate-12 z-0"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -165,7 +175,7 @@
       who likes jumping on links to show everything.
     </p>
     <div
-      class="grid grid-cols-3 gap-10 gap-12 justify-center items-center py-5"
+      class="grid  grid-cols-1 lg:grid-cols-3 gap-10 gap-12 justify-center items-center py-5 "
     >
       <div>
         <img
@@ -236,7 +246,7 @@
           class="h-48 w-48 absolute top-0 rotate-12 z-0"
         />
       </div>
-<div>
+      <div>
         <img
           src="src/components/images/collect/spacebud.png"
           alt=""
@@ -253,7 +263,7 @@
           class="h-48 w-48 absolute top-0 rotate-12 z-0"
         />
       </div>
-<div>
+      <div>
         <img
           src="src/components/images/collect/spacebud.png"
           alt=""
@@ -270,7 +280,6 @@
           class="h-48 w-48 absolute top-0 rotate-12 z-0"
         />
       </div>
-
     </div>
   </section>
 </template>

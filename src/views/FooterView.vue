@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="
-    
+    class="    
       dark:from-slate-900
       w-full
       h-screen
+
       flex
       items-center
       flex-col
@@ -41,7 +41,7 @@
 
     </div>
 
-    <div class="w-full -z-10 absolute bottom-0 bg-slate-100 dark:bg-slate-900">
+    <div class="w-full -z-10 absolute bottom-0 bg-slate-100 dark:bg-slate-900 h-screen">
       <img src="../components/images/nftfooter.png" alt="" />
     </div>
   </footer>

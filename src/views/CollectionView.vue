@@ -50,7 +50,7 @@ const items = ref([
       dark:text-slate-100
     "
   >
-    <p class=" text-xs font-thin lg:text-left">COLLECTION</p>
+    <p class=" text-xs font-thin lg:text-left pt-5">COLLECTION</p>
 
     <h2 class="mb-10 text-3xl font-black text-center lg:text-left">Yummi Universe</h2>
 
