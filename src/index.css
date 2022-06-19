@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+  .dark {
+    @apply bg-zinc-900 text-zinc-100 border-zinc-100;
+  }
+
+  .light {
+    @apply bg-zinc-100 text-zinc-900 border-zinc-900
+  }
+}

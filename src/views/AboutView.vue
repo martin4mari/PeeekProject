@@ -11,27 +11,11 @@ const item = ref({
 });
 </script>
 
-
-
 <template>
   <user-profile></user-profile>
-  <div
-    class="
-      flex
-      justify-center
-      text-slate-900
-      dark:bg-slate-900 dark:text-slate-100
-    "
-  >
+  <div class="flex justify-center dark:dark light">
     <div
-      class="
-        grid grid-cols-1
-        justify-self-center
-        rounded-2xl rounded-2xl
-        m-4
-        md:grid-cols-2
-        lg:grid-cols-2 lg:w-3/5
-      "
+      class="grid grid-cols-1 justify-self-center rounded-2xl m-4 md:grid-cols-2 lg:grid-cols-2 lg:w-3/5"
     >
       <img
         :src="'/src/components/images/yummi' + `${$route.params.id}` + '.png'"

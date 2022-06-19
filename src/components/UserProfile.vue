@@ -1,26 +1,17 @@
 <template>
-  
-
   <!--sampo section-->
-  <section class="dark:bg-slate-900 dark:text-slate-100">
+  <section class="">
     <div class="p-10 flex flex-col items-center">
-      <img
-        src="../components/images/avatar.png"
-        class="w-28 h-28"
-        alt="kid-avatar"
-      />
-      <h2 class="pt-2 text-3xl font-semibold before:content-['$'] before:px-1 before:text-blue-600 before:font-bold">Sampo</h2>
+      <img src="../components/images/avatar.png" class="w-28 h-28" alt="kid-avatar" />
+      <h2
+        class="pt-2 text-3xl font-semibold before:content-['$'] before:px-1 before:text-blue-600 before:font-bold"
+      >
+        Sampo
+      </h2>
       <!-- socials -->
       <nav class="flex m-2">
         <div
-          class="
-            border-[0.1rem] border-black/20
-            dark:bg-black/50
-            p-1
-            rounded-md
-            w-6
-            h-6
-          "
+          class="border-[0.1rem] border-black/20 dark:bg-black/50 p-1 rounded-md w-6 h-6"
         >
           <a href=""
             ><svg
@@ -42,16 +33,7 @@
         </div>
 
         <div
-          class="
-            rounded-md
-            mx-2
-            border-[0.1rem] border-black/20
-            dark:bg-black/50
-            p-1
-            rounded-md
-            w-6
-            h-6
-          "
+          class="rounded-md mx-2 border-[0.1rem] border-black/20 dark:bg-black/50 p-1 rounded-md w-6 h-6"
         >
           <a href="" class="bg-gray-300"
             ><svg
@@ -73,24 +55,15 @@
         </div>
 
         <div
-          class="
-            bg-zinc-200
-            dark:bg-black/50
-            pt-1
-            px-1
-            rounded-md
-            h-6
-            text-xs text-zinc-600/80
-          "
+          class="bg-zinc-200 dark:bg-black/50 pt-1 px-1 rounded-md h-6 text-xs text-zinc-600/80"
         >
           addr1q...kpe943
         </div>
       </nav>
 
-      <p class="p-2 text-sm  lg:w-1/3">
-        Hello, I'm an illustrator from Indonesia. My pictures tell a lot about
-        mythology. astronomy. robotics. and surreal with a play of bright
-        colors.
+      <p class="p-2 text-sm lg:w-1/3">
+        Hello, I'm an illustrator from Indonesia. My pictures tell a lot about mythology.
+        astronomy. robotics. and surreal with a play of bright colors.
       </p>
 
       <!--first prototype social component
@@ -131,11 +104,10 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap");
 
-*{
+* {
   font-family: "Sora", "sans-serif";
-
 }
 
 .modal {
@@ -147,5 +119,4 @@
   height: 100vh;
   background-color: rgba(2, 1, 1, 0.555);
 }
-
 </style>

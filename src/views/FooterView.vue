@@ -1,27 +1,13 @@
 <template>
   <footer
-    class="    
-      dark:from-slate-900
-      w-full
-      h-screen
-
-      flex
-      items-center
-      flex-col
-      justify-end
-      overflow-hidden 
-    "
+    class="w-full dark:dark light flex items-center flex-col justify-end overflow-hidden"
   >
     <div
-      class="absolute z-20 bottom-32  py-6
-        flex
-        dark:bg-slate-900 dark:text-white
-        w-5/6
-        justify-between
-        px-5
-        mx-5
-        bg-slate-100
-      "
+      class="z-20 absolute h-full w-full bg-gradient-to-t dark:from-zinc-900 to-transparent from-zinc-100"
+    ></div>
+
+    <div
+      class="absolute z-20 lg:bottom-32 py-6 flex w-5/6 justify-between px-5 mx-5 dark:dark light bottom-10 lg:p-16"
     >
       <img
         src="../components/icons/eyes.svg"
@@ -31,22 +17,14 @@
 
       <div class="flex flex-col">
         <span class="font-bold text-lg">FORT GOTTEN</span>
-        <p class="text-xs opacity-70">
-          Brought to you by the Fort Gotten Team 🌲
-        </p>
+        <p class="text-xs opacity-70">Brought to you by the Fort Gotten Team 🌲</p>
       </div>
     </div>
-    <div class="w-screen h-full bg-gradient-to-t dark:from-slate-900 from-slate-100"></div>
-    <div class="w-screen h-40 bg-slate-100 dark:bg-slate-900">
 
-    </div>
-
-    <div class="w-full -z-10 absolute bottom-0 bg-slate-100 dark:bg-slate-900 h-screen">
+    <div class="w-full">
       <img src="../components/images/nftfooter.png" alt="" />
     </div>
+
+    <!-- <div class="dark:dark light w-full button-0 absolute h-32"></div> -->
   </footer>
 </template>
-
-
-<style scoped>
-</style>

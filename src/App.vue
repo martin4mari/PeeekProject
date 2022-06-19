@@ -1,4 +1,4 @@
-<script >
+<script>
 import HeaderComponent from "./views/HeaderComponent.vue";
 import FooterView from "./views/FooterView.vue";
 
@@ -19,30 +19,10 @@ export default {
 </script>
 
 <template>
-
-  <div
-    :class="isActive ? '' : 'dark'"
-    v-bind:style="style"
-  >
-
-
+  <div :class="isActive ? '' : 'dark'" v-bind:style="style">
     <button
       @click="dark()"
-      class="
-      hidden
-        button
-        dark:bg-slate-900
-        absolute
-        z-20
-        mr-5
-        bg-gray-100
-        border-gray-500
-        right-0
-        rounded-b-full
-        dark:bg-slate-700
-        lg:block
-        p-[1px] pt-[1px]
-      "
+      class="hidden dark:dark light button absolute z-20 mr-5 bg-gray-100 border-gray-500 right-0 rounded-b-full lg:block p-[1px] pt-[1px]"
     >
       <img
         v-show="isActive === false"
@@ -58,9 +38,8 @@ export default {
       />
     </button>
 
-    <header-component class="dark:bg-slate-900"> </header-component>
+    <header-component> </header-component>
 
-    
     <router-view></router-view>
     <footer-view></footer-view>
   </div>
@@ -77,5 +56,4 @@ main {
   border: solid 1px;
   border-top: none;
 }
-
 </style>
