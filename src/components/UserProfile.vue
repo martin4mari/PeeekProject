@@ -65,40 +65,6 @@
         Hello, I'm an illustrator from Indonesia. My pictures tell a lot about mythology.
         astronomy. robotics. and surreal with a play of bright colors.
       </p>
-
-      <!--first prototype social component
-        
-        <nav
-        class="
-          w-15
-          h-7
-          flex flex-row
-          border-solid border-2 border-black
-          rounded-full
-          justify-around
-          dark:border-white
-        "
-      >
-        <ul class="divide-x divide-black dark:divide-white flex flex-row">
-          <li class="p-1.5">
-            <a href="#">
-              <img
-                src="../components/icons/Twitter.svg"
-                class="w-4.5 h-3.5 hover:opacity-90"
-                alt="twitter-icon"
-              />
-            </a>
-          </li>
-          <li class="p-1.5">
-            <a href=""
-              ><img
-                src="../components/icons/Instagram.svg"
-                class="w-4.5 h-3.5 hover:opacity-90"
-                alt="instagram-icon"
-            /></a>
-          </li>
-        </ul>
-      </nav> -->
     </div>
   </section>
 </template>

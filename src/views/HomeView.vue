@@ -23,7 +23,7 @@
     </div>
   </section>
 
-  <section class="py-2 lg:py-24">
+  <section id="about" class="py-2 lg:py-24 dark:dark light">
     <div class="text-center flex flex-col items-center">
       <h3 class="font-extrabold text-3xl">
         Organize your NFT Collections however you want to show them.
@@ -89,7 +89,9 @@
     </div>
   </section>
 
-  <section class="text-center py-20 flex justify-center flex-col items-center">
+  <section
+    class="text-center py-20 flex justify-center flex-col items-center dark:dark light"
+  >
     <h3 class="font-extrabold text-3xl w-2/3">A gallery in your pocket</h3>
     <p class="py-5 text-sm w-2/3">
       Show your collection on Desktop & Mobile and feel proud of it. Add it to your social
@@ -98,7 +100,9 @@
     <img src="../components/images/mockup.png" alt="" class="w-4/6 mt-5" />
   </section>
 
-  <section class="text-center p-10 flex justify-center flex-col items-center">
+  <section
+    class="text-center p-10 flex justify-center flex-col items-center dark:dark light"
+  >
     <h3 class="font-extrabold text-3xl">
       Starting with Cardano, but quickly expanding to other blockchains
     </h3>
@@ -107,9 +111,7 @@
       be adding support for Tezos, Ethereum & Solana, because who likes jumping on links
       to show everything.
     </p>
-    <div
-      class="grid grid-cols-1 lg:grid-cols-3 gap-10 gap-12 justify-center items-center py-5"
-    >
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-center items-center py-5">
       <div>
         <img
           src="src/components/images/collect/RangingPets.png"

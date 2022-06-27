@@ -1,6 +1,6 @@
 <script>
-import HeaderComponent from "./views/HeaderComponent.vue";
-import FooterView from "./views/FooterView.vue";
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 
 export default {
   data() {
@@ -14,7 +14,7 @@ export default {
       this.isActive = !this.isActive;
     },
   },
-  components: { HeaderComponent, FooterView },
+  components: { HeaderComponent, FooterComponent },
 };
 </script>
 
@@ -38,16 +38,16 @@ export default {
       />
     </button>
 
-    <header-component> </header-component>
-
+    <header-component></header-component>
     <router-view></router-view>
-    <footer-view></footer-view>
+    <footer-component></footer-component>
   </div>
 </template>
 
 <style>
 @import "@/assets/base.css";
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk:wght@300&family=Work+Sans&display=swap");
+
 main {
   font-family: "Manrope", sans-serif;
 }

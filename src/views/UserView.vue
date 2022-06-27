@@ -233,16 +233,16 @@ const edit = ref(false);
               <img
                 :src="collection.img"
                 :alt="collection.title"
-                class="self-center duration-500"
+                class="self-center duration-500 z-20"
               />
               <img
-                class="absolute top-0 -z-10 scale-90 group-hover:-translate-y-7 duration-500"
+                class="absolute top-0 scale-90 group-hover:-translate-y-7 duration-500 self-center"
                 alt=""
                 src="../components/images/collect/Claymate.png"
               />
               <img
                 src="../components/images/collect/RangingPets.png"
-                class="absolute top-0 -z-10 scale-95 group-hover:-translate-y-3.5 duration-500"
+                class="absolute top-0 scale-95 group- group-hover:-translate-y-3.5 duration-500 self-center"
                 alt=""
               />
               <!-- <h3 class="text-sm font-light py-4 text-center">
@@ -256,26 +256,24 @@ const edit = ref(false);
       <!-- new collection button -->
       <div alt="New Collection" class="flex flex-col z-20 absolute top-5 right-0">
         <button
-          class="mb-2 text-slate-900 border-[0.2rem] text-xs bg-slate-100 rounded-full w-10 h-10 text-slate-900 hover:text-blue-600"
+          class="mb-2 text-zinc-900 border-[0.2rem] text-xs bg-slate-100 rounded-full w-10 h-10 hover:text-blue-600"
           @click="open = true"
         >
           Add
         </button>
         <button
           @click="edit = !edit"
-          class="text-slate-900 border-[0.2rem] text-xs bg-slate-100 rounded-full w-10 h-10 text-slate-900 hover:text-blue-600"
+          class="text-zinc-900 border-[0.2rem] text-xs bg-slate-100 rounded-full w-10 h-10 hover:text-blue-600"
         >
           Edit
         </button>
       </div>
     </section>
+
+    <!--   
+    <input class="m-2 px-2 rounded-lg" type="color" v-model="style.backgroundColor" />
+    <input class="m-2 px-2 rounded-lg" type="color" v-model="style.color" />
+
+     -->
   </div>
 </template>
-
-<!-- setup color 
-    <input
-      class="m-2 px-2 rounded-lg"
-      type="color"
-      v-model="style.backgroundColor"
-    />
-    <input class="m-2 px-2 rounded-lg" type="color" v-model="style.color" />-->

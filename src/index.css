@@ -11,4 +11,46 @@
   .light {
     @apply bg-zinc-100 text-zinc-900 border-zinc-900
   }
+
+  .cold {
+    @apply bg-sky-900 text-red-200
+  }
+
+  .leopard {
+    @apply bg-orange-900 text-yellow-400 
+  }
+
+  .cake {
+    @apply bg-amber-200 text-slate-800
+  }
+
+  .matrix {
+    @apply bg-stone-900 text-green-500
+  }
+
+  .jungle {
+    @apply bg-lime-900 text-yellow-200
+  }
+
+  .lipstick {
+    @apply bg-violet-300 text-pink-900
+  }
+
+  .starry {
+    @apply bg-blue-900 text-teal-50 
+  }
+
+  .lily {
+    @apply bg-violet-200 text-blue-900
+  }
+
+  .bloody {
+    @apply bg-red-800 text-fuchsia-50 
+  
+  }
+
+
+
+
 }
+

@@ -9,7 +9,7 @@ function filterShow() {
 </script>
 
 <template>
-  <div class="hidden lg:flex dark:dark light justify-between text-xs m-5">
+  <div class="hidden lg:flex justify-between text-xs m-5">
     <div @click="filterShow()" class="flex opacity-80">
       <button class="w-24">Change button</button>
       <svg
@@ -66,12 +66,12 @@ function filterShow() {
         <select
           name=""
           id=""
-          class="dark:bg-slate-800 bg-slate-300/70 rounded-md dark:text-slate-100 outline outline-[0.1rem] outline-slate-500/70 h-6"
+          class="rounded-md outline outline-[0.1rem] outline-zinc-500/70 h-6 dark:dark light opacity-70"
         >
-          <option value="" selected class="dark:text-slate-100/70 text-slate-900/70">
+          <option value="" selected class="dark:text-zinc-100/70 text-zinc-900/70">
             Sort: A-Z
           </option>
-          <option value="" class="dark:text-slate-100/70 text-slate-900/70">
+          <option value="" class="dark:text-zinc-100/70 text-zinc-900/70">
             Sort: Z-A
           </option>
         </select>
@@ -80,7 +80,7 @@ function filterShow() {
     <input
       type="text"
       placeholder="Search.."
-      class="rounded-md outline outline-[0.1rem] outline-slate-500/70 dark:bg-slate-800 bg-slate-300/70 px-1 h-6 m-2"
+      class="rounded-md outline outline-[0.1rem] outline-zinc-500/70 dark:dark light px-1 h-6 m-2 placeholder:opacity-70"
     />
   </div>
 </template>

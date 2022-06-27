@@ -41,16 +41,7 @@ const themes = ref([
 </script>
 
 <template>
-  <section
-    class="m-40
-      dark:bg-slate-900 dark:text-slate-100
-      text-slate-900
-      flex flex-col
-      p-5
-      text-left
-      w-2/5
-    "
-  >
+  <section class="m-40 flex flex-col p-5 text-left w-2/5">
     <h1 class="m-2 text-md font-semibold mb-2">Theme options</h1>
 
     <div class="m-2 orverflow-hidden">
@@ -59,18 +50,7 @@ const themes = ref([
         type="file"
         name=""
         id=""
-        class="
-          file:mr-4
-          file:py-2
-          file:px-4
-          file:rounded-sm
-          file:border-0
-          file:text-sm
-          file:font-semibold
-          file:bg-slate-50
-          file:text-blue-500
-          hover:file:white
-        "
+        class="file:mr-4 file:py-2 file:px-4 file:rounded-sm file:border-0 file:text-sm file:font-semibold file:bg-zinc-50 file:text-blue-500 hover:file:white"
       />
     </div>
 
@@ -100,7 +80,7 @@ const themes = ref([
 
     <div class="m-2">
       <h1 class="text-xs mb-2">FONT STYLE</h1>
-      <select name="" id="" class="dark:bg-slate-900 outline-none">
+      <select name="" id="" class="dark:bg-zinc-900 outline-none">
         <option value="" selected>Basic</option>
         <option value="">Arial</option>
         <option value="">Calibri</option>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center lg:p-20 pt-24 p-2 dark:dark light">
     <h4 class="text-3xl font-bold text-blue-500 p-1">Hello 👋</h4>
-    <p class="text-3xl font-bold text-slate-700 w-2/5 mb-5 p-1 dark:text-slate-300">
+    <p class="text-3xl font-bold text-zinc-700 w-2/5 mb-5 dark:text-zinc-300">
       Peek into any Cardano Wallet’s NFTs (and share it).
     </p>
 

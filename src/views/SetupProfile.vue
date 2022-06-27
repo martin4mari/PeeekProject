@@ -2,7 +2,7 @@
   <div class="flex flex-col dark:dark light pt-10 justify-center items-center">
     <!-- nft pfp -->
 
-    <div class="h-screen">
+    <div class="">
       <div class="m-2 dark:light dark rounded-full w-20 h-20 flex justify-center">
         <img src="@/components/icons/eyes.svg" alt="avatar" class="w-16 h-20 p-2" />
       </div>
@@ -11,11 +11,11 @@
     <!-- <p class="absolute left-20" @click="screen=true">choose a nft from your walllet</p> -->
 
     <!-- username -->
-    <div class="h-screen">
+    <div class="">
       <input
         type="text"
         placeholder="@Username"
-        class="dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-4xl dark:placeholder:text-slate-100 placeholder:text-4xl p-2 font-bold text-center outline-none"
+        class="dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-4xl placeholder:text-4xl p-2 font-bold text-center outline-none"
       />
     </div>
 
@@ -23,12 +23,11 @@
     <div class="h-full w-full">
       <textarea
         placeholder="Write some short text you want the world to see about you."
-        class="py-5 w-4/5 my-5 dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 dark:placeholder:text-slate-100 text-2xl font-thin text-center outline-none"
+        class="py-5 w-4/5 my-5 dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-2xl font-thin text-center outline-none"
       ></textarea>
     </div>
 
-    <!--figma desing-->
-
+    <!--socials-->
     <div class="dark:dark light">
       <div class="flex justify-center flex-row-reverse">
         <input
@@ -70,9 +69,11 @@
     </div>
 
     <!-- <custom-setup></custom-setup> -->
-    <router-link to="/user">
-      <WalletButton></WalletButton>
-    </router-link>
+    <div class="my-2 lg:my-14">
+      <router-link to="/user">
+        <WalletButton></WalletButton>
+      </router-link>
+    </div>
   </div>
 </template>
 

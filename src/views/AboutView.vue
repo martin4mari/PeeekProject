@@ -13,7 +13,7 @@ const item = ref({
 
 <template>
   <user-profile></user-profile>
-  <div class="flex justify-center dark:dark light">
+  <div class="flex justify-center">
     <div
       class="grid grid-cols-1 justify-self-center rounded-2xl m-4 md:grid-cols-2 lg:grid-cols-2 lg:w-3/5"
     >
@@ -38,26 +38,7 @@ const item = ref({
         <p class="pt-2 mx-5 text-sm">
           {{ item.description }}
         </p>
-
-        <!--         
-        <div class="dark:text-slate-900">
-          <button
-            class="my-2 w-8 h-8 text-sm text-center font-black bg-stone-300 rounded-full"
-          >
-            A
-          </button>
-          <button
-            class="mx-2 my-2 w-8 h-8 text-sm text-center font-black bg-stone-300 rounded-full"
-          >
-            B
-          </button>
-          <button
-            class="my-2 w-40 h-8 text-sm text-center font-semibold bg-stone-300 rounded-full"
-          >
-            Send and Offer
-          </button> 
-        </div>
-      --></div>
+      </div>
     </div>
   </div>
 </template>
