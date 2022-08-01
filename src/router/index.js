@@ -10,12 +10,41 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+
+
     {
       //customizing profile 
       path: "/setup",
       name: "setup",
       component: () => import("../views/SetupProfile.vue"),
     },
+    {
+      //profile img
+      path: "/setup/profile",
+      name: "profile",
+      component: () => import("../views/ProfileImg.vue"),
+    },
+    {
+      //username
+      path: "/setup/username",
+      name: "username",
+      component: () => import("../views/SetupUsername.vue"),
+    },
+    {
+      //setup bio
+      path: "/setup/bio",
+      name: "bio",
+      component: () => import("../views/SetupBio.vue"),
+    },
+    {
+      //socials
+      path: "/setup/socials",
+      name: "socials",
+      component: () => import("../views/SetupSocials.vue"),
+    },
+
+
+
     {
       //---check on userName using route params---   peeek.me/sampo
       path: "/user",
@@ -37,8 +66,8 @@ const router = createRouter({
       name: "walletSection",
       component: () => import("../views/WalletSection.vue"),
     },
-   
-    
+
+
   ],
 });
 

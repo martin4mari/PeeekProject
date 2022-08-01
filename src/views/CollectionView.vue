@@ -52,7 +52,7 @@ const items = ref([
       <div :key="index" v-for="(item, index) in items" class="">
         <router-link :to="'/about/' + (index + 1)">
           <div class="flex flex-col justify-between">
-            <div class="overflow-hidden rounded-lg hover:shadow-2xl">
+            <div class="overflow-hidden rounded-lg">
               <img
                 v-bind:src="item.img"
                 :alt="item.title"

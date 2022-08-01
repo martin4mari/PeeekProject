@@ -150,6 +150,7 @@ const nft = ref([
 
 const open = ref(false);
 const edit = ref(false);
+const sel = ref(false);
 </script>
 
 <template>
@@ -165,26 +166,37 @@ const edit = ref(false);
         class="flex flex-col justify-between items-start m-2 lg:m-20 rounded-lg p-10 dark:dark light"
       >
         <h2 class="text-4xl my-5">Make a collection</h2>
+        <label for="" class="flex justify-around self-end">
+          Select all
+          <input type="checkbox" />
+        </label>
+
         <div class="dark:dark light">
           <label for="" class="px-2 text-lg font-thin text-center">Name:</label>
           <input
             type="text"
-            class="dark:dark light placeholder:text-slate-900 dark:placeholder:text-slate-100 text-lg placeholder:text-2xl font-thin outline-none border-b-[0.1rem]"
+            class="dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-lg placeholder:text-2xl font-thin outline-none border-b-[0.1rem]"
             v-model="newCollection.title"
           />
         </div>
 
-        <input type="checkbox" />
-        Select all
-
         <div class="flex w-full my-10 flex-wrap">
-          <div v-for="(img, index) in nft" :key="index" class="flex flex-row">
+          <div
+            v-for="(img, index) in nft"
+            :key="index"
+            class="flex flex-row"
+            @click="sel = !sel"
+            :class="
+              sel && (index == 3 || index==5) ? ' border-2 border-zinc-400 scale-95 duration-75' : ''
+            "
+          >
             <img :src="img.img" :alt="index" class="p-2 w-44 h-44" />
           </div>
         </div>
+
         <button
           @click="addCollection()"
-          class="dark:bg-slate-100 dark:text-slate-900 rounded-full bg-slate-900 text-white hover:opacity-90 self-end mx-4 p-3 font-thin text-xs"
+          class="dark:light dark rounded-full hover:opacity-90 self-end mx-4 p-3 font-thin text-xs"
         >
           Save
         </button>
