@@ -12,12 +12,7 @@ const router = createRouter({
     },
 
 
-    {
-      //customizing profile 
-      path: "/setup",
-      name: "setup",
-      component: () => import("../views/SetupProfile.vue"),
-    },
+ 
     {
       //profile img
       path: "/setup/profile",

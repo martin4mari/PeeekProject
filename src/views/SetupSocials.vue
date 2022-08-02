@@ -1,9 +1,10 @@
 <template>
+  <!-- <div class="w-20 h-20 animate-bounce m-12">
+    <img src="../components/icons/eyes.svg" alt="" />
+  </div> -->
   <div
-    class="flex flex-col dark:dark light pt-10 justify-center items-center m-2 lg:m-20 lg:pt-44"
+    class="flex flex-col dark:dark light pt-10 justify-center items-center m-2 lg:m-20 lg:pt-44 animate-wiggle"
   >
-    <!-- nft pfp -->
-
     <!--socials-->
     <div class="dark:dark light">
       <div class="flex justify-left flex-row-reverse">

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex dark:dark light pt-10 justify-center content-center m-5 lg:m-20 lg:pt-44 group"
+    class="flex dark:dark light pt-10 justify-center content-center m-5 lg:m-20 lg:pt-44 group animate-wiggle"
   >
     <input
       type="text"

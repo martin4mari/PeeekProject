@@ -1,21 +1,21 @@
 <template>
   <div
-    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-36"
+    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-36 animate-wiggle"
   >
     <!-- bio -->
 
     <div class="flex flex-col group">
       <p class="text-[0.7rem] group-hover:translate-x-2 duration-700">Edit bio</p>
       <svg
-        class="rotate-180"
+        class="rotate-180 dark:invert"
         width="190"
         height="10"
         viewBox="0 0 190 10"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="4.15268" cy="5.02515" r="4.15268" fill="white" />
-        <rect x="6.67513" y="4.19078" width="182.73" height="1.66876" fill="white" />
+        <circle cx="4.15268" cy="5.02515" r="4.15268" fill="#010114" />
+        <rect x="6.67513" y="4.19078" width="182.73" height="1.66876" fill="#010114" />
       </svg>
     </div>
 

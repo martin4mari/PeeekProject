@@ -1,43 +1,24 @@
-<script>
+<script setup>
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import DarkTheme from "./components/DarkTheme.vue";
 
-export default {
-  data() {
-    return {
-      isActive: false,
-      style: { backgroundColor: "", color: "" },
-    };
-  },
-  methods: {
-    dark() {
-      this.isActive = !this.isActive;
-    },
-  },
-  components: { HeaderComponent, FooterComponent },
-};
+import { ref } from "vue";
+const dark = ref(true);
+
+// export default {
+//   data() {
+//     return {
+//       style: { backgroundColor: "", color: "" },
+//     };
+//   },
+//   components: { HeaderComponent, FooterComponent, DarkTheme },
+// };
 </script>
 
 <template>
-  <div :class="isActive ? '' : 'dark'" v-bind:style="style">
-    <button
-      @click="dark()"
-      class="hidden dark:dark light button absolute z-20 mr-5 bg-gray-100 border-gray-500 right-0 rounded-b-full lg:block p-[1px] pt-[1px]"
-    >
-      <img
-        v-show="isActive === false"
-        src="./components/icons/sun.svg"
-        class="w-4 h-4"
-        alt=""
-      />
-      <img
-        v-show="isActive === true"
-        src="./components/icons/lmoon.svg"
-        class="w-4 h-4"
-        alt=""
-      />
-    </button>
-
+  <div :class="dark ? 'dark' : ''">
+    <dark-theme @on-change="dark = $event"></dark-theme>
     <header-component></header-component>
     <router-view></router-view>
     <footer-component></footer-component>
@@ -50,10 +31,5 @@ export default {
 
 main {
   font-family: "Manrope", sans-serif;
-}
-
-.button {
-  border: solid 1px;
-  border-top: none;
 }
 </style>

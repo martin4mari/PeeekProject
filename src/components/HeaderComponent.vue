@@ -67,6 +67,7 @@
         </div>
 
         <!-- slider menu -->
+
         <div
           v-show="!slider"
           class="slider h-full py-10 px-2 w-screen dark:dark light right-0 top-0 fixed z-30 lg:hidden"
@@ -108,23 +109,6 @@
                 💬Share $Sampos Wallet
               </li>
             </router-link>
-
-            <button
-              class="text-sm rounded-md outline outline-[0.1rem] outline-zinc-500/70 dark:bg-zinc-800 bg-zinc-300/70 mx-3 text-zinc-500 p-1"
-            >
-              Address/$handle...
-            </button>
-            <button
-              @click="isActive = !isActive"
-              class="dark:dark light rounded-full border-[1px] w-8 h-8 p-1"
-            >
-              <img v-show="isActive === true" src="../components/icons/sun.svg" alt="" />
-              <img
-                v-show="isActive === false"
-                src="../components/icons/lmoon.svg"
-                alt=""
-              />
-            </button>
 
             <nav class="flex m-2">
               <div
@@ -197,7 +181,6 @@
 import { ref } from "@vue/reactivity";
 
 const slider = ref(true);
-const isActive = ref(true);
 </script>
 
 <style scoped>

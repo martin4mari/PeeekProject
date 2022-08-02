@@ -187,7 +187,9 @@ const sel = ref(false);
             class="flex flex-row"
             @click="sel = !sel"
             :class="
-              sel && (index == 3 || index==5) ? ' border-2 border-zinc-400 scale-95 duration-75' : ''
+              sel && (index == 3 || index == 5)
+                ? ' border-2 border-zinc-400 scale-95 duration-75'
+                : ''
             "
           >
             <img :src="img.img" :alt="index" class="p-2 w-44 h-44" />
