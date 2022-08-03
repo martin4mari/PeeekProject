@@ -7,13 +7,19 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        wiggle: {
-          '0%': { transform: 'translate(50rem)' },
-          '100%': { transform: 'translate(0rem)' },
-        }
+        rotate: {
+          '0%': { transform: 'rotate(0deg)'},
+          '100%': { transform: 'rotate(180deg)'},
+        },
+        slide: {
+          '0%': { transform: 'translateX(50rem)'},
+          '100%': { transform: 'translateX(0px)'},
+        },
       },
        animation: {
-        wiggle: 'wiggle 0.1s ease-in-out',
+        rotate: 'rotate 0.5s ease-in-out',
+        slide: 'slide 0.1s ease-in-out',
+
       },
     },
     

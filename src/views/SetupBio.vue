@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-36 animate-wiggle"
+    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-36 animate-slide"
   >
     <!-- bio -->
 
@@ -25,21 +25,20 @@
         class="py-5 w-4/5 my-5 dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-2xl font-thin text-center outline-none"
       ></textarea>
     </div>
-  </div>
-
-  <div class="absolute z-50 right-10">
-    <router-link to="/setup/socials">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
-      >
-        <path
-          d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
-        ></path>
-      </svg>
-    </router-link>
+    <div class="absolute z-40 right-0">
+      <router-link to="/setup/socials">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          style="fill: rgba(255, 255, 255, 1); transform: ; msfilter: "
+        >
+          <path
+            d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+          ></path>
+        </svg>
+      </router-link>
+    </div>
   </div>
 </template>
 

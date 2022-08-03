@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-44 group animate-wiggle"
+    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-40 group animate-slide"
   >
     <!-- nft pfp -->
     <div class="m-2 dark:light dark rounded-full w-28 h-28 flex justify-center">
@@ -11,14 +11,15 @@
         Select an NFT to use as PFP
       </p>
       <svg
+        class="dark:invert"
         width="190"
         height="10"
         viewBox="0 0 190 10"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="4.15268" cy="5.02515" r="4.15268" fill="white" />
-        <rect x="6.67513" y="4.19078" width="182.73" height="1.66876" fill="white" />
+        <circle cx="4.15268" cy="5.02515" r="4.15268" fill="#010114" />
+        <rect x="6.67513" y="4.19078" width="182.73" height="1.66876" fill="#010114" />
       </svg>
     </div>
     <div class="absolute right-0">

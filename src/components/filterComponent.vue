@@ -2,15 +2,11 @@
 import { ref } from "vue";
 
 const filter = ref(true);
-
-function filterShow() {
-  filter.value = !filter.value;
-}
 </script>
 
 <template>
-  <div class="hidden lg:flex justify-between text-xs m-5">
-    <div @click="filterShow()" class="flex opacity-80">
+  <div class="hidden lg:flex justify-between text-xs m-5 box-border">
+    <div @click="filter = !filter" class="flex opacity-80">
       <button class="w-24">Change button</button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -26,36 +22,38 @@ function filterShow() {
     </div>
 
     <div
-      v-show="filter === true"
+      v-show="filter"
       class="w-full mx-5 items-center flex justify-between opacity-70 border-y-[1px] dark:border-zinc-100/20 py-2"
     >
       <ul class="flex">
         <li
           class="mx-2 hover:text-blue-600 hover:bg-blue-900/20 hover:font-semibold rounded-sm p-1"
         >
-          Default
+          <router-link to="/"> Default </router-link>
         </li>
+
         <li
           class="font-thin mx-2 hover:text-blue-600 hover:bg-blue-900/20 hover:font-semibold rounded-sm p-1"
         >
-          Favourites
+          <router-link to="/">Favourites </router-link>
         </li>
 
         <li
           class="mx-2 hover:text-blue-600 hover:bg-blue-900/20 hover:font-semibold rounded-sm p-1"
         >
-          By Policy
+          <router-link to="/"> By Policy </router-link>
         </li>
+
         <li
           class="mx-2 hover:text-blue-600 hover:bg-blue-900/20 hover:font-semibold rounded-sm p-1"
         >
-          Tokens
+          <router-link to="/"> Tokens </router-link>
         </li>
 
         <li
           class="hover:text-blue-600 hover:bg-blue-900/20 hover:font-semibold rounded-sm p-1"
         >
-          View All
+          <router-link to="/"> View All </router-link>
         </li>
       </ul>
 
@@ -80,7 +78,7 @@ function filterShow() {
     <input
       type="text"
       placeholder="Search.."
-      class="rounded-md outline outline-[0.1rem] outline-zinc-500/70 dark:dark light px-1 h-6 m-2 placeholder:opacity-70"
+      class="rounded-md outline outline-[0.1rem] outline-zinc-500/70 dark:dark light px-1 h-6 m-2 placeholder:opacity-70 self-center"
     />
   </div>
 </template>

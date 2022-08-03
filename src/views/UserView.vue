@@ -163,7 +163,7 @@ const sel = ref(false);
   >
     <section>
       <div
-        class="flex flex-col justify-between items-start m-2 lg:m-20 rounded-lg p-10 dark:dark light"
+        class="flex flex-col justify-between items-start m-2 lg:m-20 rounded-lg p-10 dark:dark light box-border"
       >
         <h2 class="text-4xl my-5">Make a collection</h2>
         <label for="" class="flex justify-around self-end">
@@ -184,15 +184,15 @@ const sel = ref(false);
           <div
             v-for="(img, index) in nft"
             :key="index"
-            class="flex flex-row"
+            class="flex flex-row box-border w-56 h-56"
             @click="sel = !sel"
             :class="
-              sel && (index == 3 || index == 5)
-                ? ' border-2 border-zinc-400 scale-95 duration-75'
+              sel || index == 3 || index == 5
+                ? ' border-2 border-zinc-400 duration-75 opacity-75 scale-95 duration-50 '
                 : ''
             "
           >
-            <img :src="img.img" :alt="index" class="p-2 w-44 h-44" />
+            <img :src="img.img" :alt="index" class="p-2" />
           </div>
         </div>
 

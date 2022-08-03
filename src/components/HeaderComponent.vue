@@ -1,6 +1,6 @@
 <template>
   <header class="header dark:dark light">
-    <div class="flex flex-row justify-between w-11/12 h-14 w-full">
+    <div class="flex flex-row justify-between h-14 w-full">
       <router-link to="/"
         ><img
           src="@/components/icons/Peek.svg"
@@ -59,18 +59,30 @@
       <div>
         <div class="lg:hidden right-0 m-2 z-40 fixed" @click="slider = !slider">
           <svg
+            v-show="slider"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 stroke-zinc-900 fill-zinc-900 dark:fill-zinc-100 dark:stroke-zinc-100"
+            class="w-6 h-6 stroke-zinc-900 fill-zinc-900 dark:fill-zinc-100 dark:stroke-zinc-100 animate-rotate"
           >
             <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+          </svg>
+          <svg
+            class="w-6 h-6 stroke-zinc-900 fill-zinc-900 dark:fill-zinc-100 dark:stroke-zinc-100 animate-rotate"
+            v-show="!slider"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <!--! Font Awesome Free 6.0.0-beta2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+            <path
+              d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+            />
           </svg>
         </div>
 
         <!-- slider menu -->
 
         <div
-          v-show="!slider"
-          class="slider h-full py-10 px-2 w-screen dark:dark light right-0 top-0 fixed z-30 lg:hidden"
+          :class="slider ? 'translate-x-full' : 'translate-x-0'"
+          class="h-full py-10 px-2 w-screen dark:dark light right-0 top-0 fixed z-30 lg:hidden duration-1000"
         >
           <ul class="flex flex-col text-center h-5/6 justify-around items-center text-md">
             <router-link to="/">
@@ -78,9 +90,9 @@
                 :class="
                   this.$route.path === '/'
                     ? 'text-blue-600'
-                    : 'text-slate-900 dark:text-slate-100'
+                    : 'text-zinc-900 dark:text-zinc-100'
                 "
-                class="px-4 hover:scale-105 duration-300 p-1"
+                class="px-4 hover:scale-105 p-1"
               >
                 About
               </li>
@@ -90,9 +102,9 @@
                 :class="
                   this.$route.path === '/wallet'
                     ? 'text-blue-600'
-                    : 'text-slate-900 dark:text-slate-100'
+                    : 'text-zinc-900 dark:text-zinc-100'
                 "
-                class="px-4 hover:scale-105 duration-300 p-1"
+                class="px-4 hover:scale-105 p-1"
               >
                 My Wallet
               </li>
@@ -102,9 +114,9 @@
                 :class="
                   this.$route.path === '/user'
                     ? 'text-blue-600'
-                    : 'text-slate-900 dark:text-slate-100'
+                    : 'text-zinc-900 dark:text-zinc-100'
                 "
-                class="px-4 duration-300 p-1"
+                class="px-4 p-1"
               >
                 💬Share $Sampos Wallet
               </li>
@@ -186,20 +198,5 @@ const slider = ref(true);
 <style scoped>
 .peeek {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.slider {
-  animation-name: move;
-  animation-duration: 0.5s;
-}
-
-@keyframes move {
-  from {
-    right: -600px;
-  }
-
-  to {
-    right: 0px;
-  }
 }
 </style>

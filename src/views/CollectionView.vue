@@ -41,7 +41,7 @@ const items = ref([
 <template>
   <user-profile></user-profile>
 
-  <section class="lg:px-24 flex flex-col justify-center dark:dark text-center">
+  <section class="lg:px-24 flex flex-col justify-center dark:dark text-center box-border">
     <p class="text-xs font-thin lg:text-left pt-5">COLLECTION</p>
 
     <h2 class="mb-10 text-3xl font-black text-center lg:text-left">Yummi Universe</h2>

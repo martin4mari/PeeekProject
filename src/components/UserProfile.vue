@@ -33,7 +33,7 @@
         </div>
 
         <div
-          class="rounded-md mx-2 border-[0.1rem] border-black/20 dark:bg-black/50 p-1 rounded-md w-6 h-6"
+          class="rounded-md mx-2 border-[0.1rem] border-black/20 dark:bg-black/50 p-1 w-6 h-6"
         >
           <a href="" class="bg-gray-300"
             ><svg

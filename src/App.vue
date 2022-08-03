@@ -17,7 +17,7 @@ const dark = ref(true);
 </script>
 
 <template>
-  <div :class="dark ? 'dark' : ''">
+  <div :class="dark ? 'dark' : ''" class="min-h-screen box-border">
     <dark-theme @on-change="dark = $event"></dark-theme>
     <header-component></header-component>
     <router-view></router-view>
