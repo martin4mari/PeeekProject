@@ -9,7 +9,7 @@
           Peeek inside your wallet and get a glance at your NFTs any where you are. Make
           collections, select what you want to show and add it to your social media.
         </p>
-        <router-link to="/setup/profile">
+        <router-link to="/login">
           <walletButton></walletButton>
         </router-link>
       </div>

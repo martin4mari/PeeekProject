@@ -5,7 +5,7 @@ const filter = ref(true);
 </script>
 
 <template>
-  <div class="hidden lg:flex justify-between text-xs m-5 box-border">
+  <div class="hidden lg:flex justify-between text-xs m-5 h-12">
     <div @click="filter = !filter" class="flex opacity-80">
       <button class="w-24">Change button</button>
       <svg

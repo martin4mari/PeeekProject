@@ -37,7 +37,11 @@ const router = createRouter({
       name: "socials",
       component: () => import("../views/SetupSocials.vue"),
     },
-
+    {
+      path: "/login",
+      name: "login",
+      component: () => import("../views/ConnectWallet.vue"),
+    },
 
 
     {
