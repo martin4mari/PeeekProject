@@ -1,9 +1,6 @@
 <template>
-  <div
-    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-36 animate-slide"
-  >
+  <div class="flex dark:dark light justify-center items-center animate-slide">
     <!-- bio -->
-
     <div class="flex flex-col group">
       <p class="text-[0.7rem] group-hover:translate-x-2 duration-700">Edit bio</p>
       <svg
@@ -25,7 +22,7 @@
         class="py-5 w-4/5 my-5 dark:dark light placeholder:text-zinc-900 dark:placeholder:text-zinc-100 text-2xl font-thin text-center outline-none"
       ></textarea>
     </div>
-    <div class="absolute z-40 right-0">
+    <div class="absolute z-40 right-10">
       <router-link to="/setup/socials">
         <svg
           xmlns="http://www.w3.org/2000/svg"

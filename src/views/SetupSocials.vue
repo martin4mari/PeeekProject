@@ -1,9 +1,6 @@
 <template>
-  <!-- <div class="w-20 h-20 animate-bounce m-12">
-    <img src="../components/icons/eyes.svg" alt="" />
-  </div> -->
   <div
-    class="flex flex-col dark:dark light pt-10 justify-center items-center m-2 lg:m-20 lg:pt-36 animate-slide"
+    class="flex flex-col dark:dark light justify-center items-center animate-slide my-2"
   >
     <!--socials-->
     <div class="dark:dark light">

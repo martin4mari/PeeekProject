@@ -20,7 +20,7 @@ const dark = ref(true);
   <div :class="dark ? 'dark' : ''" class="min-h-screen box-border">
     <dark-theme @on-change="dark = $event"></dark-theme>
     <header-component></header-component>
-    <router-view></router-view>
+    <router-view class="min-h-screen box-border"></router-view>
     <footer-component></footer-component>
   </div>
 </template>

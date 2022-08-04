@@ -233,6 +233,11 @@ const sel = ref(false);
       <p class="text-center opacity-70">Sorry, no collections yet :(</p>
     </div>
 
+    <!-- loading animation------- -->
+    <!-- <div class="w-20 h-20 animate-bounce m-12">
+    <img src="../components/icons/eyes.svg" alt="" />
+  </div> -->
+
     <section class="flex flex-col justify-center px-2 lg:px-20 pt-5 lg:mx-10">
       <div
         class="grid md:grid-cols-3 gap-1 lg:gap-12 lg:grid-cols-4"

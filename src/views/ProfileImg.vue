@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex dark:dark light pt-10 justify-center items-center m-5 lg:m-20 lg:pt-40 group animate-slide"
-  >
+  <div class="flex dark:dark light justify-center items-center group animate-slide">
     <!-- nft pfp -->
     <div class="m-2 dark:light dark rounded-full w-28 h-28 flex justify-center">
       <img src="@/components/icons/eyes.svg" alt="avatar" class="w-16 h-18 p-2" />
@@ -22,7 +20,7 @@
         <rect x="6.67513" y="4.19078" width="182.73" height="1.66876" fill="#010114" />
       </svg>
     </div>
-    <div class="absolute right-0">
+    <div class="absolute right-10">
       <router-link to="/setup/username"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
